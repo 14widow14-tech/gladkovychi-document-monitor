@@ -61,7 +61,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p _site
-          cp index.html status.html state.json changes.json _site/
+          cp index.html status.html state.json changes.json preview-monitor-6h.jpg _site/
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
