@@ -1,0 +1,16 @@
+{
+  "site_name": "Гладковицька громада",
+  "documents_url": "https://gld-tg.gov.ua/docs/",
+  "page_param": "p",
+  "max_pages": 100,
+  "minimum_listing_ratio": 0.85,
+  "removal_confirmations": 2,
+  "recent_document_days": 45,
+  "full_scan_interval_hours": 168,
+  "request_timeout": 30,
+  "request_attempts": 3,
+  "retry_backoff_seconds": 2,
+  "request_delay_seconds": 0.2,
+  "user_agent": "GladkovychiDocumentMonitor/2.0 (+https://github.com/14widow14-tech/gladkovychi-document-monitor)",
+  "keep_change_events": 500
+}

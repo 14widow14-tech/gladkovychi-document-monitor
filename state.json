@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "site_name": "Гладковицька громада",
+  "source_url": "https://gld-tg.gov.ua/docs/",
+  "checked_at": null,
+  "last_full_scan": null,
+  "source_ok": null,
+  "pages_scanned": 0,
+  "page_counts": [],
+  "listing_documents_count": 0,
+  "documents_count": 0,
+  "attachments_count": 0,
+  "detail_requests": 0,
+  "last_change": {
+    "added_documents": 0,
+    "changed_documents": 0,
+    "removed_documents": 0,
+    "added_attachments": 0,
+    "removed_attachments": 0
+  },
+  "pending_missing": 0,
+  "missing_counts": {},
+  "errors": [],
+  "documents": {}
+}

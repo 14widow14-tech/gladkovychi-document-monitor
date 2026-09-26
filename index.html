@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Автоматичний моніторинг змін в офіційних документах Гладковицької громади.">
+  <title>Моніторинг офіційних документів — Гладковицька громада</title>
+  <style>
+    :root{--blue:#07518f;--blue2:#0b6cad;--bg:#f3f6fa;--card:#fff;--text:#18202a;--muted:#657184;--green:#16843d;--red:#c62828;--orange:#c96b00;--line:#e3e9f0}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text)}
+    .wrap{max-width:1180px;margin:auto;padding:14px}.hero{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border-radius:18px;padding:22px}.hero h1{font-size:clamp(24px,4vw,44px);margin:0 0 8px}.hero p{margin:0;opacity:.9}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}.card{background:var(--card);border-radius:14px;padding:16px;box-shadow:0 1px 6px #00000010}.k{font-size:12px;color:var(--muted);text-transform:uppercase;font-weight:800}.v{font-size:30px;font-weight:900;margin-top:5px}.small{font-size:12px;color:var(--muted);line-height:1.45}.ok{color:var(--green)}.bad{color:var(--red)}.warn{color:var(--orange)}
+    .changes{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:12px}.changes .v{font-size:25px}h2{margin:22px 0 10px}.event{padding:10px 0;border-bottom:1px solid var(--line)}.event:last-child{border:0}.pill{display:inline-block;padding:3px 7px;border-radius:999px;background:#edf3f9;font-size:11px;margin-right:5px}
+    .error{padding:8px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}input{width:100%;padding:11px;border:1px solid #ccd5df;border-radius:9px;margin-bottom:10px;font:inherit}table{width:100%;border-collapse:collapse}th,td{padding:9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}a{color:#075c9e;text-decoration:none}a:hover{text-decoration:underline}.table-wrap{overflow:auto}.footer{padding:20px 4px 8px;color:var(--muted);font-size:12px}
+    @media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.changes{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.changes{grid-template-columns:1fr 1fr}th:nth-child(2),td:nth-child(2){display:none}.wrap{padding:9px}.hero{padding:17px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Офіційні документи Гладковицької громади</h1>
+      <p>Автоматичний моніторинг нових, змінених і зниклих документів та вкладень</p>
+    </section>
+
+    <section class="grid" aria-label="Стан моніторингу">
+      <div class="card"><div class="k">Документів</div><div class="v" id="docs">—</div></div>
+      <div class="card"><div class="k">Вкладень</div><div class="v" id="atts">—</div></div>
+      <div class="card"><div class="k">Остання перевірка</div><div class="v" style="font-size:19px" id="checked">—</div><div class="small" id="source">—</div></div>
+      <div class="card"><div class="k">Повна звірка</div><div class="v" style="font-size:19px" id="fullscan">—</div><div class="small" id="scaninfo">—</div></div>
+    </section>
+
+    <section class="changes" aria-label="Останні зміни">
+      <div class="card"><div class="k">Нові документи</div><div class="v ok" id="addd">0</div></div>
+      <div class="card"><div class="k">Змінено</div><div class="v warn" id="chgd">0</div></div>
+      <div class="card"><div class="k">Зникли</div><div class="v bad" id="remd">0</div></div>
+      <div class="card"><div class="k">Нові файли</div><div class="v ok" id="adda">0</div></div>
+      <div class="card"><div class="k">Зниклі файли</div><div class="v bad" id="rema">0</div></div>
+    </section>
+
+    <h2>Останні події</h2>
+    <div id="events" class="card">Завантаження…</div>
+
+    <section id="errors-section" hidden>
+      <h2>Помилки останньої перевірки</h2>
+      <div id="errors" class="card"></div>
+    </section>
+
+    <h2>Поточний список документів</h2>
+    <div class="card table-wrap">
+      <label class="small" for="q">Пошук за датою, типом, номером або назвою</label>
+      <input id="q" placeholder="Пошук…" autocomplete="off">
+      <table>
+        <thead><tr><th>Дата</th><th>Тип</th><th>Документ</th><th>Файли</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="footer">Джерело: <a href="https://gld-tg.gov.ua/docs/" target="_blank" rel="noopener noreferrer">офіційний каталог документів Гладковицької громади</a>.</div>
+  </main>
+
+  <script>
+    const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+    const fmt=value=>value?new Date(value).toLocaleString("uk-UA",{dateStyle:"medium",timeStyle:"short"}):"ще не виконувалась";
+    const dateKey=value=>{const m=/^(\d{2})\.(\d{2})\.(\d{4})$/.exec(value||"");return m?`${m[3]}${m[2]}${m[1]}`:"00000000"};
+    const safeHref=value=>{try{const url=new URL(value,location.href);return ["http:","https:"].includes(url.protocol)?url.href:"#"}catch{return "#"}};
+    const getJSON=async path=>{const response=await fetch(`${path}?ts=${Date.now()}`,{cache:"no-store"});if(!response.ok)throw new Error(`${path}: HTTP ${response.status}`);return response.json()};
+    let state={};
+
+    async function load(){
+      const [current,history]=await Promise.all([getJSON("state.json"),getJSON("changes.json")]);
+      state=current;
+      docs.textContent=current.documents_count??0;
+      atts.textContent=current.attachments_count??0;
+      checked.textContent=fmt(current.checked_at);
+      fullscan.textContent=fmt(current.last_full_scan);
+      scaninfo.textContent=`Сторінок: ${current.pages_scanned??0} · детальних запитів: ${current.detail_requests??0}`;
+      const errorCount=(current.errors||[]).length;
+      const pending=current.pending_missing||0;
+      source.innerHTML=current.source_ok===true
+        ?`<span class="ok">● Джерело доступне</span>${pending?` · <span class="warn">${pending} очікує підтвердження</span>`:""}`
+        :current.source_ok===false
+          ?`<span class="bad">● Часткові помилки: ${errorCount}</span>`
+          :"● Ще не перевірено";
+
+      const last=current.last_change||{};
+      addd.textContent=last.added_documents||0;chgd.textContent=last.changed_documents||0;remd.textContent=last.removed_documents||0;adda.textContent=last.added_attachments||0;rema.textContent=last.removed_attachments||0;
+
+      const recent=(history.events||[]).slice(0,20);
+      events.innerHTML=recent.length?recent.map(event=>{
+        const parts=[];
+        if(event.first_run)parts.push('<span class="pill">базовий знімок</span>');
+        if(event.full_scan)parts.push('<span class="pill">повна звірка</span>');
+        if((event.added_documents||[]).length)parts.push(`<span class="ok">+${event.added_documents.length} документів</span>`);
+        if((event.changed_documents||[]).length)parts.push(`<span class="warn">${event.changed_documents.length} змінено</span>`);
+        if((event.removed_documents||[]).length)parts.push(`<span class="bad">-${event.removed_documents.length} зникло</span>`);
+        if((event.added_attachments||[]).length)parts.push(`<span class="ok">+${event.added_attachments.length} файлів</span>`);
+        if((event.removed_attachments||[]).length)parts.push(`<span class="bad">-${event.removed_attachments.length} файлів</span>`);
+        if((event.pending_missing||[]).length)parts.push(`<span class="warn">${event.pending_missing.length} очікує повторної перевірки</span>`);
+        if((event.errors||[]).length)parts.push(`<span class="bad">${event.errors.length} помилок</span>`);
+        if(!parts.length)parts.push("без змін");
+        return `<div class="event"><b>${esc(fmt(event.checked_at))}</b><div class="small">${event.pages_scanned||0} сторінок · ${event.detail_requests||0} детальних запитів</div>${parts.join(" · ")}</div>`;
+      }).join(""):"Ще немає збережених подій.";
+
+      if(errorCount){
+        document.getElementById("errors-section").hidden=false;
+        errors.innerHTML=current.errors.slice(0,50).map(item=>`<div class="error"><b>ID ${esc(item.id)}</b>: ${esc(item.error)}</div>`).join("");
+      }
+      render("");
+    }
+
+    function render(query){
+      const normalized=(query||"").toLowerCase().trim();
+      const documents=Object.values(state.documents||{}).sort((a,b)=>dateKey(b.date).localeCompare(dateKey(a.date))||Number(b.id)-Number(a.id));
+      tbody.innerHTML=documents.filter(doc=>!normalized||[doc.date,doc.type,doc.number,doc.title].join(" ").toLowerCase().includes(normalized)).map(doc=>{
+        const href=safeHref(doc.url);
+        const label=`${doc.number?`№${esc(doc.number)} `:""}${esc(doc.title)}`;
+        return `<tr><td>${esc(doc.date)}</td><td>${esc(doc.type)}</td><td><a href="${esc(href)}" target="_blank" rel="noopener noreferrer"><b>${label}</b></a>${doc.detail_ok===false?'<div class="small warn">деталі очікують повторної перевірки</div>':""}</td><td>${(doc.attachments||[]).length}</td></tr>`;
+      }).join("");
+    }
+
+    q.addEventListener("input",event=>render(event.target.value));
+    load().catch(error=>{events.innerHTML=`<span class="bad">Помилка завантаження даних: ${esc(error.message)}</span>`});
+  </script>
+</body>
+</html>
