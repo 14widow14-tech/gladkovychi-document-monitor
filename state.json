@@ -2,10 +2,10 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-10-04T05:19:11+00:00",
+  "checked_at": "2026-10-07T03:31:44+00:00",
   "last_full_scan": "2026-10-04T05:19:11+00:00",
   "source_ok": true,
-  "pages_scanned": 40,
+  "pages_scanned": 41,
   "page_counts": [
     32,
     32,
@@ -46,23 +46,58 @@
     32,
     32,
     32,
-    31
+    32,
+    1
   ],
-  "listing_documents_count": 1279,
-  "documents_count": 1279,
-  "attachments_count": 2311,
-  "detail_requests": 1279,
+  "listing_documents_count": 1281,
+  "documents_count": 1281,
+  "attachments_count": 2313,
+  "detail_requests": 62,
   "last_change": {
-    "added_documents": 0,
+    "added_documents": 2,
     "changed_documents": 0,
     "removed_documents": 0,
-    "added_attachments": 0,
+    "added_attachments": 2,
     "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2494958": {
+      "id": "2494958",
+      "url": "https://gld-tg.gov.ua/docs/2494958/",
+      "type": "Розпорядження голови",
+      "date": "05.10.2026",
+      "number": "196-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/fc2c5cb8aaaa84ba748479aee55289af.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "0ed42b0f064ca4ddcf9bb2c8823937cc57ba1cb7c0bc72e382846ea1cbf83c6a"
+    },
+    "2494957": {
+      "id": "2494957",
+      "url": "https://gld-tg.gov.ua/docs/2494957/",
+      "type": "Розпорядження голови",
+      "date": "01.10.2026",
+      "number": "195-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/5b00e0a37759ae3858d7f2891c89c770.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "a06a008242ca4cebc0108c5b3d7938942c5f013248dcc5c9398020300f2dabec"
+    },
     "2493002": {
       "id": "2493002",
       "url": "https://gld-tg.gov.ua/docs/2493002/",

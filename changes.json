@@ -1,6 +1,63 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-07T03:31:44+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1281,
+      "documents_current": 1281,
+      "attachments_current": 2313,
+      "detail_requests": 62,
+      "added_documents": [
+        {
+          "id": "2494958",
+          "url": "https://gld-tg.gov.ua/docs/2494958/",
+          "type": "Розпорядження голови",
+          "date": "05.10.2026",
+          "number": "196-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/fc2c5cb8aaaa84ba748479aee55289af.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "0ed42b0f064ca4ddcf9bb2c8823937cc57ba1cb7c0bc72e382846ea1cbf83c6a"
+        },
+        {
+          "id": "2494957",
+          "url": "https://gld-tg.gov.ua/docs/2494957/",
+          "type": "Розпорядження голови",
+          "date": "01.10.2026",
+          "number": "195-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/5b00e0a37759ae3858d7f2891c89c770.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "a06a008242ca4cebc0108c5b3d7938942c5f013248dcc5c9398020300f2dabec"
+        }
+      ],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/5b00e0a37759ae3858d7f2891c89c770.docx",
+        "https://rada.info/upload/users_files/04346770/docs/fc2c5cb8aaaa84ba748479aee55289af.docx"
+      ],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-04T05:19:11+00:00",
       "first_run": false,
       "full_scan": true,
