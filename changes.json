@@ -1,6 +1,117 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-14T03:45:12+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1286,
+      "documents_current": 1286,
+      "attachments_current": 2318,
+      "detail_requests": 61,
+      "added_documents": [
+        {
+          "id": "2500918",
+          "url": "https://gld-tg.gov.ua/docs/2500918/",
+          "type": "Розпорядження голови",
+          "date": "09.10.2026",
+          "number": "202-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/5c6efda3ebee2f7a9eedba7bf46c8dae.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "08e68ab803224dcc61cc658e991b96198ae65484b06eed7ff16ddd2b2886cde5"
+        },
+        {
+          "id": "2500917",
+          "url": "https://gld-tg.gov.ua/docs/2500917/",
+          "type": "Розпорядження голови",
+          "date": "09.10.2026",
+          "number": "201-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/cbd8fa1e03bffe70604d003dcab08dc8.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "a7343d805a80b5fb0a5b5cc558cc2432e8036c26569c98fd1d37fba8829bde17"
+        },
+        {
+          "id": "2500915",
+          "url": "https://gld-tg.gov.ua/docs/2500915/",
+          "type": "Розпорядження голови",
+          "date": "07.10.2026",
+          "number": "200-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/a3533941db998da4ee02f6e415c779ab.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "989bf5a0b211e38cd4bc733d5790107c4949604ba248b7494eab6ef71b845013"
+        },
+        {
+          "id": "2500914",
+          "url": "https://gld-tg.gov.ua/docs/2500914/",
+          "type": "Розпорядження голови",
+          "date": "07.10.2026",
+          "number": "199-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/3623e47e7790aa970e6edacee99f384b.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "f675c15634c5e4851ef2d48bf5335744b2b71c0cfd4dcc9aade5540fc69fe963"
+        },
+        {
+          "id": "2500913",
+          "url": "https://gld-tg.gov.ua/docs/2500913/",
+          "type": "Розпорядження голови",
+          "date": "06.10.2026",
+          "number": "197-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/19d71c7a4b2d69a65ec45d38fa29e7da.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "98f0ac0e688338861b2bf9dcd0925c42cc0a2c154328fd81cc18e42c6301c381"
+        }
+      ],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/19d71c7a4b2d69a65ec45d38fa29e7da.docx",
+        "https://rada.info/upload/users_files/04346770/docs/3623e47e7790aa970e6edacee99f384b.docx",
+        "https://rada.info/upload/users_files/04346770/docs/5c6efda3ebee2f7a9eedba7bf46c8dae.docx",
+        "https://rada.info/upload/users_files/04346770/docs/a3533941db998da4ee02f6e415c779ab.docx",
+        "https://rada.info/upload/users_files/04346770/docs/cbd8fa1e03bffe70604d003dcab08dc8.docx"
+      ],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-12T03:36:03+00:00",
       "first_run": false,
       "full_scan": true,
