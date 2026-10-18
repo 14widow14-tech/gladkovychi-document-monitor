@@ -1,6 +1,59 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-18T03:43:15+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1286,
+      "documents_current": 1286,
+      "attachments_current": 2317,
+      "detail_requests": 58,
+      "added_documents": [],
+      "changed_documents": [
+        {
+          "before": {
+            "id": "1756326",
+            "url": "https://gld-tg.gov.ua/docs/1756326/",
+            "type": "Розпорядження голови",
+            "date": "24.07.2024",
+            "number": "148-153? 154-156",
+            "title": "розпорядження сільського голови",
+            "listed_files": 1,
+            "attachments": [
+              {
+                "url": "https://rada.info/upload/users_files/04346770/docs/cde6436eb1ed12d14d2da9c914de95b0.zip",
+                "label": "Файл 1 (1.79 МБ)"
+              }
+            ],
+            "detail_ok": true,
+            "content_hash": "3162ed2cb22813c7f1e3a0d832af2cbca1aae00b2e1cf7f2032a543c4fe5066d"
+          },
+          "after": {
+            "id": "1756326",
+            "url": "https://gld-tg.gov.ua/docs/1756326/",
+            "type": "Розпорядження голови",
+            "date": "24.07.2024",
+            "number": "148-153?",
+            "title": "розпорядження сільського голови",
+            "listed_files": 1,
+            "attachments": [],
+            "detail_ok": true,
+            "content_hash": "2391d919063a58de553330243d11129f83e2ac8aafee1a63c70effaab9301279"
+          }
+        }
+      ],
+      "removed_documents": [],
+      "added_attachments": [],
+      "removed_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/cde6436eb1ed12d14d2da9c914de95b0.zip"
+      ],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-14T03:45:12+00:00",
       "first_run": false,
       "full_scan": false,
