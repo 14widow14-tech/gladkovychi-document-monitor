@@ -2,8 +2,8 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-10-18T03:43:15+00:00",
-  "last_full_scan": "2026-10-12T03:36:03+00:00",
+  "checked_at": "2026-10-19T03:47:41+00:00",
+  "last_full_scan": "2026-10-19T03:47:41+00:00",
   "source_ok": true,
   "pages_scanned": 41,
   "page_counts": [
@@ -51,14 +51,14 @@
   ],
   "listing_documents_count": 1286,
   "documents_count": 1286,
-  "attachments_count": 2317,
-  "detail_requests": 58,
+  "attachments_count": 2318,
+  "detail_requests": 1286,
   "last_change": {
     "added_documents": 0,
     "changed_documents": 1,
     "removed_documents": 0,
-    "added_attachments": 0,
-    "removed_attachments": 1
+    "added_attachments": 1,
+    "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
@@ -7255,12 +7255,17 @@
       "url": "https://gld-tg.gov.ua/docs/1756326/",
       "type": "Розпорядження голови",
       "date": "24.07.2024",
-      "number": "148-153?",
+      "number": "148-153? 154-156",
       "title": "розпорядження сільського голови",
       "listed_files": 1,
-      "attachments": [],
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/cde6436eb1ed12d14d2da9c914de95b0.zip",
+          "label": "Файл 1 (1.79 МБ)"
+        }
+      ],
       "detail_ok": true,
-      "content_hash": "2391d919063a58de553330243d11129f83e2ac8aafee1a63c70effaab9301279"
+      "content_hash": "3162ed2cb22813c7f1e3a0d832af2cbca1aae00b2e1cf7f2032a543c4fe5066d"
     },
     "1756308": {
       "id": "1756308",
