@@ -1,6 +1,25 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-26T03:48:11+00:00",
+      "first_run": false,
+      "full_scan": true,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1286,
+      "documents_current": 1286,
+      "attachments_current": 2318,
+      "detail_requests": 1286,
+      "added_documents": [],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-19T03:47:41+00:00",
       "first_run": false,
       "full_scan": true,
