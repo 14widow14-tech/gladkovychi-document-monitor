@@ -1,6 +1,63 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-27T09:01:13+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1288,
+      "documents_current": 1288,
+      "attachments_current": 2320,
+      "detail_requests": 45,
+      "added_documents": [
+        {
+          "id": "2515327",
+          "url": "https://gld-tg.gov.ua/docs/2515327/",
+          "type": "Розпорядження голови",
+          "date": "26.10.2026",
+          "number": "206-О",
+          "title": "Розпорядження сільського голови",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/4eee99be2c8e0c16e87f42b71f45234c.docx",
+              "label": "Файл 1 (0.27 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "69f59cf58d49d4805f3c23381b5809b6a6dd56b119eea6b0d544cbeeb9e33f7d"
+        },
+        {
+          "id": "2515322",
+          "url": "https://gld-tg.gov.ua/docs/2515322/",
+          "type": "Рішення виконкому",
+          "date": "16.10.2026",
+          "number": "137-152",
+          "title": "Рішення виконкому від 16.10.2026",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/a28fd8d507a1379d9f0c32070a5cf1ee.zip",
+              "label": "Файл 1 (3.43 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "b7dca1db4576d7718d381d0c34ea0afafbb5eefb2b0190bd6a1fd19711db098b"
+        }
+      ],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/4eee99be2c8e0c16e87f42b71f45234c.docx",
+        "https://rada.info/upload/users_files/04346770/docs/a28fd8d507a1379d9f0c32070a5cf1ee.zip"
+      ],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-26T03:48:11+00:00",
       "first_run": false,
       "full_scan": true,

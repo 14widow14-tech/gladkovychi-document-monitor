@@ -2,7 +2,7 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-10-26T03:48:11+00:00",
+  "checked_at": "2026-10-27T09:01:13+00:00",
   "last_full_scan": "2026-10-26T03:48:11+00:00",
   "source_ok": true,
   "pages_scanned": 41,
@@ -47,23 +47,57 @@
     32,
     32,
     32,
-    6
+    8
   ],
-  "listing_documents_count": 1286,
-  "documents_count": 1286,
-  "attachments_count": 2318,
-  "detail_requests": 1286,
+  "listing_documents_count": 1288,
+  "documents_count": 1288,
+  "attachments_count": 2320,
+  "detail_requests": 45,
   "last_change": {
-    "added_documents": 0,
+    "added_documents": 2,
     "changed_documents": 0,
     "removed_documents": 0,
-    "added_attachments": 0,
+    "added_attachments": 2,
     "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2515327": {
+      "id": "2515327",
+      "url": "https://gld-tg.gov.ua/docs/2515327/",
+      "type": "Розпорядження голови",
+      "date": "26.10.2026",
+      "number": "206-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/4eee99be2c8e0c16e87f42b71f45234c.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "69f59cf58d49d4805f3c23381b5809b6a6dd56b119eea6b0d544cbeeb9e33f7d"
+    },
+    "2515322": {
+      "id": "2515322",
+      "url": "https://gld-tg.gov.ua/docs/2515322/",
+      "type": "Рішення виконкому",
+      "date": "16.10.2026",
+      "number": "137-152",
+      "title": "Рішення виконкому від 16.10.2026",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/a28fd8d507a1379d9f0c32070a5cf1ee.zip",
+          "label": "Файл 1 (3.43 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "b7dca1db4576d7718d381d0c34ea0afafbb5eefb2b0190bd6a1fd19711db098b"
+    },
     "2500918": {
       "id": "2500918",
       "url": "https://gld-tg.gov.ua/docs/2500918/",
