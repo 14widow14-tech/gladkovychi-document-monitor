@@ -2,7 +2,7 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-10-27T09:01:13+00:00",
+  "checked_at": "2026-10-28T09:41:36+00:00",
   "last_full_scan": "2026-10-26T03:48:11+00:00",
   "source_ok": true,
   "pages_scanned": 41,
@@ -47,23 +47,108 @@
     32,
     32,
     32,
-    8
+    13
   ],
-  "listing_documents_count": 1288,
-  "documents_count": 1288,
-  "attachments_count": 2320,
-  "detail_requests": 45,
+  "listing_documents_count": 1293,
+  "documents_count": 1293,
+  "attachments_count": 2325,
+  "detail_requests": 50,
   "last_change": {
-    "added_documents": 2,
+    "added_documents": 5,
     "changed_documents": 0,
     "removed_documents": 0,
-    "added_attachments": 2,
+    "added_attachments": 5,
     "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2517442": {
+      "id": "2517442",
+      "url": "https://gld-tg.gov.ua/docs/2517442/",
+      "type": "Розпорядження голови",
+      "date": "27.10.2026",
+      "number": "208-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/c6b1d942c342367ae0cd9a890f10e129.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "3b40f713da515e452b06c440598e67cf13eba0fb322344cf52edcc2f3ab18741"
+    },
+    "2517439": {
+      "id": "2517439",
+      "url": "https://gld-tg.gov.ua/docs/2517439/",
+      "type": "Розпорядження голови",
+      "date": "27.10.2026",
+      "number": "207-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/80096f82b711beaf5352bc42ac1dbcbe.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "a656f0832224297ee893ed57c730547e5eae8ab2e2830b09887157da3ef22d16"
+    },
+    "2515714": {
+      "id": "2515714",
+      "url": "https://gld-tg.gov.ua/docs/2515714/",
+      "type": "Розпорядження голови",
+      "date": "20.10.2026",
+      "number": "205-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/ffeb9f00c4e094b92add534dadfa2c23.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "46f4a6ea54d78e2dc32c644ddc87ab4ad660e881d11b866ca4a065270bf305cc"
+    },
+    "2515713": {
+      "id": "2515713",
+      "url": "https://gld-tg.gov.ua/docs/2515713/",
+      "type": "Розпорядження голови",
+      "date": "20.10.2026",
+      "number": "204-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/cefb873f3820571d72e1f78528065c98.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "1a9a1f7fd25d34d53fcee1cb0f11e28bc83ad878d1870ef2b932e5af507cc445"
+    },
+    "2515712": {
+      "id": "2515712",
+      "url": "https://gld-tg.gov.ua/docs/2515712/",
+      "type": "Розпорядження голови",
+      "date": "14.10.2026",
+      "number": "203-О",
+      "title": "Розпорядження сільського голови",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/a36e492c2faf4dfef99e251ea5135807.docx",
+          "label": "Файл 1 (0.27 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "dffde9b1980f512e0e4e2062ef67710969282aebde750016888cab3e59fe32df"
+    },
     "2515327": {
       "id": "2515327",
       "url": "https://gld-tg.gov.ua/docs/2515327/",
