@@ -2,7 +2,7 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-10-28T09:41:36+00:00",
+  "checked_at": "2026-10-30T10:02:55+00:00",
   "last_full_scan": "2026-10-26T03:48:11+00:00",
   "source_ok": true,
   "pages_scanned": 41,
@@ -47,23 +47,40 @@
     32,
     32,
     32,
-    13
+    14
   ],
-  "listing_documents_count": 1293,
-  "documents_count": 1293,
-  "attachments_count": 2325,
-  "detail_requests": 50,
+  "listing_documents_count": 1294,
+  "documents_count": 1294,
+  "attachments_count": 2326,
+  "detail_requests": 48,
   "last_change": {
-    "added_documents": 5,
+    "added_documents": 1,
     "changed_documents": 0,
     "removed_documents": 0,
-    "added_attachments": 5,
+    "added_attachments": 1,
     "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2519442": {
+      "id": "2519442",
+      "url": "https://gld-tg.gov.ua/docs/2519442/",
+      "type": "Проекти рішень",
+      "date": "29.10.2026",
+      "number": "б/н",
+      "title": "Проекти рішень 55 сесії",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/2adb1c66463b75253e89bf558ace5716.zip",
+          "label": "Файл 1 (1.74 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "4c2c3d57681794535eb37aa628e16521c1d958b491e5c058a3f8e1bb88c4f04c"
+    },
     "2517442": {
       "id": "2517442",
       "url": "https://gld-tg.gov.ua/docs/2517442/",

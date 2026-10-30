@@ -1,6 +1,45 @@
 {
   "events": [
     {
+      "checked_at": "2026-10-30T10:02:55+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1294,
+      "documents_current": 1294,
+      "attachments_current": 2326,
+      "detail_requests": 48,
+      "added_documents": [
+        {
+          "id": "2519442",
+          "url": "https://gld-tg.gov.ua/docs/2519442/",
+          "type": "Проекти рішень",
+          "date": "29.10.2026",
+          "number": "б/н",
+          "title": "Проекти рішень 55 сесії",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/2adb1c66463b75253e89bf558ace5716.zip",
+              "label": "Файл 1 (1.74 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "4c2c3d57681794535eb37aa628e16521c1d958b491e5c058a3f8e1bb88c4f04c"
+        }
+      ],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/2adb1c66463b75253e89bf558ace5716.zip"
+      ],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-10-28T09:41:36+00:00",
       "first_run": false,
       "full_scan": false,
