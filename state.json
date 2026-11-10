@@ -2,7 +2,7 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-11-09T11:34:01+00:00",
+  "checked_at": "2026-11-10T11:13:59+00:00",
   "last_full_scan": "2026-11-09T11:34:01+00:00",
   "source_ok": true,
   "pages_scanned": 41,
@@ -47,23 +47,40 @@
     32,
     32,
     32,
-    14
+    15
   ],
-  "listing_documents_count": 1294,
-  "documents_count": 1294,
-  "attachments_count": 2326,
-  "detail_requests": 1294,
+  "listing_documents_count": 1295,
+  "documents_count": 1295,
+  "attachments_count": 2327,
+  "detail_requests": 43,
   "last_change": {
-    "added_documents": 0,
+    "added_documents": 1,
     "changed_documents": 0,
     "removed_documents": 0,
-    "added_attachments": 0,
+    "added_attachments": 1,
     "removed_attachments": 0
   },
   "pending_missing": 0,
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2531109": {
+      "id": "2531109",
+      "url": "https://gld-tg.gov.ua/docs/2531109/",
+      "type": "Рішення виконкому",
+      "date": "09.11.2026",
+      "number": "153-158",
+      "title": "Рішення позачергового виконкому від 09.11.2026",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/24ca5fc168f0e065e1a2847450f41ed7.zip",
+          "label": "Файл 1 (0.08 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "6d8c408a03cc8a5d97b0623edd6a4380930331a5ad34116154899c60604cbcf3"
+    },
     "2519442": {
       "id": "2519442",
       "url": "https://gld-tg.gov.ua/docs/2519442/",
