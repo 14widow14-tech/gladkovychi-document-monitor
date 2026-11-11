@@ -1,6 +1,45 @@
 {
   "events": [
     {
+      "checked_at": "2026-11-11T10:59:02+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1296,
+      "documents_current": 1296,
+      "attachments_current": 2328,
+      "detail_requests": 44,
+      "added_documents": [
+        {
+          "id": "2532536",
+          "url": "https://gld-tg.gov.ua/docs/2532536/",
+          "type": "Рішення сесії",
+          "date": "06.11.2026",
+          "number": "1180-1197",
+          "title": "Рішення 55 сесії + протокол + список присутніх + поіменне голосування",
+          "listed_files": 1,
+          "attachments": [
+            {
+              "url": "https://rada.info/upload/users_files/04346770/docs/91d7d39cbf5327560398db07dfedbb96.zip",
+              "label": "Файл 1 (4.4 МБ)"
+            }
+          ],
+          "detail_ok": true,
+          "content_hash": "6aa2d6ce097a98b5df9a4bd1ffb73feaa5529ff911d32777c7e1aee1c8ee7582"
+        }
+      ],
+      "changed_documents": [],
+      "removed_documents": [],
+      "added_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/91d7d39cbf5327560398db07dfedbb96.zip"
+      ],
+      "removed_attachments": [],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-11-10T11:13:59+00:00",
       "first_run": false,
       "full_scan": false,

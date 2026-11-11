@@ -2,7 +2,7 @@
   "schema_version": 2,
   "site_name": "Гладковицька громада",
   "source_url": "https://gld-tg.gov.ua/docs/",
-  "checked_at": "2026-11-10T11:13:59+00:00",
+  "checked_at": "2026-11-11T10:59:02+00:00",
   "last_full_scan": "2026-11-09T11:34:01+00:00",
   "source_ok": true,
   "pages_scanned": 41,
@@ -47,12 +47,12 @@
     32,
     32,
     32,
-    15
+    16
   ],
-  "listing_documents_count": 1295,
-  "documents_count": 1295,
-  "attachments_count": 2327,
-  "detail_requests": 43,
+  "listing_documents_count": 1296,
+  "documents_count": 1296,
+  "attachments_count": 2328,
+  "detail_requests": 44,
   "last_change": {
     "added_documents": 1,
     "changed_documents": 0,
@@ -64,6 +64,23 @@
   "missing_counts": {},
   "errors": [],
   "documents": {
+    "2532536": {
+      "id": "2532536",
+      "url": "https://gld-tg.gov.ua/docs/2532536/",
+      "type": "Рішення сесії",
+      "date": "06.11.2026",
+      "number": "1180-1197",
+      "title": "Рішення 55 сесії + протокол + список присутніх + поіменне голосування",
+      "listed_files": 1,
+      "attachments": [
+        {
+          "url": "https://rada.info/upload/users_files/04346770/docs/91d7d39cbf5327560398db07dfedbb96.zip",
+          "label": "Файл 1 (4.4 МБ)"
+        }
+      ],
+      "detail_ok": true,
+      "content_hash": "6aa2d6ce097a98b5df9a4bd1ffb73feaa5529ff911d32777c7e1aee1c8ee7582"
+    },
     "2531109": {
       "id": "2531109",
       "url": "https://gld-tg.gov.ua/docs/2531109/",
