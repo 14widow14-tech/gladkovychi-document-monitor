@@ -1,6 +1,59 @@
 {
   "events": [
     {
+      "checked_at": "2026-11-27T12:22:51+00:00",
+      "first_run": false,
+      "full_scan": false,
+      "source_ok": true,
+      "source_url": "https://gld-tg.gov.ua/docs/",
+      "pages_scanned": 41,
+      "listing_documents": 1304,
+      "documents_current": 1304,
+      "attachments_current": 2335,
+      "detail_requests": 1304,
+      "added_documents": [],
+      "changed_documents": [
+        {
+          "before": {
+            "id": "876962",
+            "url": "https://gld-tg.gov.ua/docs/876962/",
+            "type": "Розпорядження голови",
+            "date": "12.04.2021",
+            "number": "78-О",
+            "title": "Про затвердження посадових інструкцій працівників апарату виконавчого комітету Гладковицької сільської ради",
+            "listed_files": 1,
+            "attachments": [
+              {
+                "url": "https://rada.info/upload/users_files/04346770/docs/ce97cc79af0b5b71b4e657dcfd7ebfde.docx",
+                "label": "Про затвердження посадових інструкцій працівників апарату виконавчого комітету Гладковицької сільської ради (0.04 МБ)"
+              }
+            ],
+            "detail_ok": true,
+            "content_hash": "3d0c042e1d687b9a1b5b1bfbf844a739abee6bdf2c628b5d00875450daa72992"
+          },
+          "after": {
+            "id": "876962",
+            "url": "https://gld-tg.gov.ua/docs/876962/",
+            "type": "Категорія: Розпорядження голови",
+            "date": "12.04.2021",
+            "number": "78-О",
+            "title": "Про затвердження посадових інструкцій працівників апарату виконавчого комітету Гладковицької сільської ради",
+            "listed_files": 1,
+            "attachments": [],
+            "detail_ok": true,
+            "content_hash": "e0d890744c69189fb99ae51b0caf7fe4ac3ba05c6e5ac81ace0b01b5ac744771"
+          }
+        }
+      ],
+      "removed_documents": [],
+      "added_attachments": [],
+      "removed_attachments": [
+        "https://rada.info/upload/users_files/04346770/docs/ce97cc79af0b5b71b4e657dcfd7ebfde.docx"
+      ],
+      "pending_missing": [],
+      "errors": []
+    },
+    {
       "checked_at": "2026-11-25T12:57:30+00:00",
       "first_run": false,
       "full_scan": false,
